@@ -6,11 +6,17 @@ This project is a computer vision project that aims to detect zombies in images 
 
 The project utilizes object detection techniques, specifically the TensorFlow Object Detection API, to identify and locate zombies in visual data. The project includes the following key steps:
 
-* **Setting up the Environment**:  Cloning the TensorFlow models repository and installing the necessary dependencies.
-* **Data Preparation**:  Downloading and preprocessing the zombie detection dataset.
-* **Model Training**:  Training an object detection model (e.g., Faster R-CNN, SSD) on the prepared dataset.
-* **Inference**:  Using the trained model to detect zombies in new images and videos.
-* **Visualization**:  Visualizing the detection results by drawing bounding boxes around detected zombies.
+* **Setting up the Environment**: Cloning the TensorFlow models repository and installing the necessary dependencies.
+* **Data Preparation**: Downloading and preprocessing the zombie detection dataset.
+* **Model Training**: Training an object detection model (e.g., Faster R-CNN, SSD) on the prepared dataset.
+* **Inference**: Using the trained model to detect zombies in new images and videos.
+* **Visualization**: Visualizing the detection results by drawing bounding boxes around detected zombies.
+
+## Demo
+
+Here's a demo of the zombie detection in action:
+
+![Zombie Detection Demo](zombie-anim.gif)
 
 ## Installation and Setup
 
@@ -55,21 +61,21 @@ The project utilizes object detection techniques, specifically the TensorFlow Ob
 
 ## Usage
 
-1.  **Prepare your dataset:** The notebook assumes you have a dataset of images and annotations.  Modify the notebook to point to your data.  The expected format is likely Pascal VOC or COCO.
+1.  **Prepare your dataset:** The notebook assumes you have a dataset of images and annotations. Modify the notebook to point to your data. The expected format is likely Pascal VOC or COCO.
 
-2.  **Configure the model:** Choose an object detection model (e.g., Faster R-CNN, SSD) and configure its parameters in the configuration file.  You'll need to update the configuration file path.
+2.  **Configure the model:** Choose an object detection model (e.g., Faster R-CNN, SSD) and configure its parameters in the configuration file. You'll need to update the configuration file path.
 
 3.  **Train the model:** Run the training script, providing the path to the configuration file and the training data directory.
 
-4.  **Run inference:** Use the trained model to detect zombies in images or videos.  The notebook contains code for this.
+4.  **Run inference:** Use the trained model to detect zombies in images or videos. The notebook contains code for this.
 
 ## Code Description
 
-* `Untitled0 (1).ipynb`: This Jupyter Notebook contains the complete code for the zombie detection project.  It includes the steps for data preparation, model training, inference, and visualization.
+* `Untitled0 (1).ipynb`: This Jupyter Notebook contains the complete code for the zombie detection project. It includes the steps for data preparation, model training, inference, and visualization.
 
 ## Results
 
-The notebook includes code to generate a GIF animation of the zombie detection results.  The animation shows bounding boxes around detected zombies in a video.
+The notebook includes code to generate a GIF animation of the zombie detection results. The animation shows bounding boxes around detected zombies in a video.
 
 ## Dependencies
 
@@ -97,4 +103,3 @@ Your Name
 
 * DeepLearning.AI for providing the project as part of the Advanced Computer Vision Specialization.
 * TensorFlow for the Object Detection API.
-
