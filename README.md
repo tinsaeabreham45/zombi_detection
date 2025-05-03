@@ -16,7 +16,7 @@ The project utilizes object detection techniques, specifically the TensorFlow Ob
 
 Here's a demo of the zombie detection in action:
 
-![Zombie Detection Demo](zombie-anim.gif)
+![Zombie Detection Demo](zombie-anim (1).gif)
 
 ## Installation and Setup
 
