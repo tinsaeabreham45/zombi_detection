@@ -16,44 +16,17 @@ The project utilizes object detection techniques, specifically the TensorFlow Ob
 
 Here's a demo of the zombie detection in action:
 
-![Zombie Detection Demo](zombie-anim (1).gif)
+![Zombie Detection Demo](zombie-anim.gif)
 
-## Installation and Setup
 
-1.  **Clone the repository:**
 
-    ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    cd your-repo-name
-    ```
-
-2.  **Mount Google Drive (if using Google Colab):**
-
-    ```python
-    from google.colab import drive
-    drive.mount('/content/drive')
-    ```
-
-3.  **Navigate to the project directory:**
-
-    ```bash
-    %cd /content/drive/MyDrive/Colab_Notebooks/Advanced_CV/zombi_detect
-    ```
-
-4.  **Clone the TensorFlow models repository:**
-
-    ```bash
-    !rm -rf ./models/
-    !git clone --depth 1 [https://github.com/tensorflow/models/](https://github.com/tensorflow/models/)
-    ```
-
-5.  **Pin the TensorFlow models version:**
+  **Pin the TensorFlow models version:**
 
     ```bash
     !sed -i 's/tf-models-official>=2.5.1/tf-models-official==2.15.0/g' ./models/research/object_detection/packages/tf2/setup.py
     ```
 
-6.  **Install the Object Detection API:**
+  **Install the Object Detection API:**
 
     ```bash
     !cd models/research/ && protoc object_detection/protos/*.proto --python_out=. && cp object_detection/packages/tf2/setup.py . && python -m pip install .
