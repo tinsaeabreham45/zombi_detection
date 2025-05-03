@@ -97,7 +97,7 @@ The project relies on the following main libraries:
 
 ## Author
 
-Your Name
+Tinsae Abreham
 
 ## Acknowledgements
 
